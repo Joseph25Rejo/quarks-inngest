@@ -1,9 +1,4 @@
-services:
-  - type: web
-    name: indian-stock-api
-    env: python
-    buildCommand: pip install -r requirements.txt
-    startCommand: python app.py
-    envVars:
-      - key: FLASK_ENV
-        value: production
+Flask==2.3.3
+flask-cors==4.0.0
+yfinance==0.2.65
+pandas==2.2.3
